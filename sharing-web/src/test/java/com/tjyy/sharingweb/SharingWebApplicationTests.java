@@ -1,10 +1,10 @@
-package com.tjyy.tgrfilesharing;
+package com.tjyy.sharingweb;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TgrFileSharingApplicationTests {
+class SharingWebApplicationTests {
 
     @Test
     void contextLoads() {

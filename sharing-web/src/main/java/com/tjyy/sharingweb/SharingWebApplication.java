@@ -1,13 +1,13 @@
-package com.tjyy.tgrfilesharing;
+package com.tjyy.sharingweb;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TgrFileSharingApplication {
+public class SharingWebApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(TgrFileSharingApplication.class, args);
+        SpringApplication.run(SharingWebApplication.class, args);
     }
 
 }
