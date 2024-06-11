@@ -1,0 +1,33 @@
+
+# knife4j
+knife4j:
+  enable: true
+  setting:
+    language: zh-CN
+  openapi:
+    title: TGR-FileSharing
+    description: 基于 REACT + SPRINGBOOT 开发的文件共享系统
+    version: 1.0.0
+    concat:
+      - tjyy
+      - https://github.com/Tjyy-1223/TGR-FileSharing
+    license: Apache License 2.0
+    license-url:
+    email: tjyy24@nuaa.edu.cn
+    group:
+      admin:
+        group-name: 用户-鉴权相关功能
+        api-rule: package
+        api-rule-resources:
+          - com.tjyy.sharing.web.admin
+      front:
+        group-name: 文件展示相关功能
+        api-rule: package
+        api-rule-resources:
+          - com.tjyy.sharing.web.front
+
+# mybatis 相关统一配置
+mybatis-plus:
+  configuration:
+    #开启下划线转驼峰
+    map-underscore-to-camel-case: true

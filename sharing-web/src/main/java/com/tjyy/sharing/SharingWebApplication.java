@@ -1,4 +1,4 @@
-package com.tjyy.sharingweb;
+package com.tjyy.sharing;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

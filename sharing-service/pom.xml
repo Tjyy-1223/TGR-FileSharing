@@ -3,10 +3,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.tjyy</groupId>
-    <artifactId>sharing-web</artifactId>
+    <artifactId>sharing-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>sharing-web</name>
-    <description>sharing-web</description>
+    <name>sharing-service</name>
+    <description>sharing-service</description>
 
     <parent>
         <groupId>com.tjyy</groupId>
@@ -19,15 +19,9 @@
     </properties>
 
     <dependencies>
-        <!--以下为加载的基础依赖-->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <groupId>com.tjyy</groupId>
+            <artifactId>sharing-api</artifactId>
         </dependency>
 
         <dependency>
@@ -37,8 +31,9 @@
         </dependency>
 
         <dependency>
-            <groupId>com.github.xiaoymin</groupId>
-            <artifactId>knife4j-openapi2-spring-boot-starter</artifactId>
+            <groupId>com.auth0</groupId>
+            <artifactId>java-jwt</artifactId>
+            <version>${jwt.version}</version>
         </dependency>
 
         <dependency>
@@ -48,9 +43,8 @@
         </dependency>
 
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
         </dependency>
 
     </dependencies>
