@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
  * @description: MybatisPlus-Mapper 自动扫描
  */
 @Configuration
-@ComponentScan("com.tjyy.sharing.service")
+// @ComponentScan("com.tjyy.sharing.service")
 @MapperScan(basePackages = {
         "com.tjyy.sharing.service.user.respository.mapper",
 })
