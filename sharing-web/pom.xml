@@ -21,6 +21,11 @@
     <dependencies>
         <!--以下为加载的基础依赖-->
         <dependency>
+            <groupId>com.tjyy</groupId>
+            <artifactId>sharing-service</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
         </dependency>

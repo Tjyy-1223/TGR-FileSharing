@@ -23,7 +23,7 @@ public class LoginServiceImpl implements LoginService {
 
     @Override
     public void logout(String session) {
-
+        // session 失效的操作
     }
 
     /**

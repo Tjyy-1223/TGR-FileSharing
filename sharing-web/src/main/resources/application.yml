@@ -1,3 +1,16 @@
+server:
+  port: 8080
+  servlet:
+    session:
+      timeout: 5m # 设置session的有效期为五分钟
+  compression:
+    enabled: true # 开启返回结果压缩，减少传输耗时
+    min-response-size: 2KB
+
+# 引入其他 yaml 文件配置
+spring:
+  config:
+    import: application-dal.yml
 
 # knife4j
 knife4j:
@@ -15,13 +28,8 @@ knife4j:
     license-url:
     email: tjyy24@nuaa.edu.cn
     group:
-      admin:
-        group-name: 用户-鉴权相关功能
-        api-rule: package
-        api-rule-resources:
-          - com.tjyy.sharing.web.admin
       front:
-        group-name: 文件展示相关功能
+        group-name: 相关功能实现
         api-rule: package
         api-rule-resources:
           - com.tjyy.sharing.web.front
@@ -31,3 +39,7 @@ mybatis-plus:
   configuration:
     #开启下划线转驼峰
     map-underscore-to-camel-case: true
+
+# 默认的数据库名
+database:
+  name: file_sharing

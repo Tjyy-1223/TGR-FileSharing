@@ -12,6 +12,7 @@
     <modules>
         <module>sharing-web</module>
         <module>sharing-api</module>
+        <module>sharing-service</module>
     </modules>
 
     <parent>
