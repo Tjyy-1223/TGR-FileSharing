@@ -43,3 +43,15 @@ mybatis-plus:
 # 默认的数据库名
 database:
   name: file_sharing
+
+# 密码加密配置
+security:
+  salt: tangerine
+  salt-index: 3
+
+
+tgr-sharing:
+  jwt:
+    issuer: tangerine # 签发者
+    secret: tangerine_1223 # 签名密钥
+    expire: 2592000000 # jwt的有效期，默认30天

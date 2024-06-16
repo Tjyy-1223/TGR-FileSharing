@@ -2,8 +2,7 @@ package com.tjyy.sharing.service.user.respository.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.tjyy.sharing.api.entity.BaseDO;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
+import lombok.*;
 
 /**
  * @author: Tjyy

@@ -13,6 +13,7 @@
         <module>sharing-web</module>
         <module>sharing-api</module>
         <module>sharing-service</module>
+        <module>sharing-core</module>
     </modules>
 
     <parent>
@@ -29,6 +30,7 @@
         <spring-boot.version>2.7.1</spring-boot.version>
         <knife4j.version>4.0.0</knife4j.version>
         <jwt.version>4.4.0</jwt.version>
+        <guava.version>31.1-jre</guava.version>
         <mybaits-plus.version>3.5.2</mybaits-plus.version>
     </properties>
 
@@ -44,6 +46,18 @@
                 <groupId>com.tjyy</groupId>
                 <artifactId>sharing-service</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.tjyy</groupId>
+                <artifactId>sharing-core</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
             </dependency>
 
             <dependency>

@@ -21,6 +21,11 @@
     <dependencies>
         <dependency>
             <groupId>com.tjyy</groupId>
+            <artifactId>sharing-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.tjyy</groupId>
             <artifactId>sharing-api</artifactId>
         </dependency>
 
