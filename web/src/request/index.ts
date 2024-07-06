@@ -1,5 +1,4 @@
 import axios from "axios"
-import createAxiosFn from "@/request/request";
 
 // 创建axios实例
 const instance = axios.create({
@@ -24,18 +23,4 @@ instance.interceptors.response.use(res=>{
 })
 
 export default instance
-
-// export function apiGet(url: string, data: any, a: any, b: any){
-//     return new Promise((resolve, reject) =>{
-//         return createAxiosFn("", a, b)
-//             .get(url, data)
-//     })
-// }
-//
-// export function apiPost(url: string, data: any, a: any, b: any){
-//     return new Promise((resolve, reject) =>{
-//         return createAxiosFn("", a, b)
-//             .post(url, data)
-//     })
-// }
 
