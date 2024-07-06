@@ -25,6 +25,7 @@ function ToPage1(){
   },[])
   return <div></div>
 }
+
 // 手写封装路由守卫
 function BeforeRouterEnter(){
   const outlet = useRoutes(router);
@@ -38,14 +39,13 @@ function BeforeRouterEnter(){
     const location = useLocation()
     let token = localStorage.getItem("lege-react-management-token");
     //1、如果访问的是登录页面， 并且有token， 跳转到首页
-    if(location.pathname==="/login" && token){
-      // 这里不能直接用 useNavigate 来实现跳转 ，因为需要BeforeRouterEnter是一个正常的JSX组件
-      return <ToPage1 />
-    }
+    // if(location.pathname==="/login" && token){
+    //   return <ToPage1 />
+    // }
     //2、如果访问的不是登录页面，并且没有token， 跳转到登录页
-    if(location.pathname!=="/login" && !token){
-      return <ToLogin />
-    }
+    // if(location.pathname!=="/login" && !token){
+    //   return <ToLogin />
+    // }
 
     return outlet
 }

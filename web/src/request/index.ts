@@ -1,16 +1,16 @@
 import axios from "axios"
+import createAxiosFn from "@/request/request";
 
 // 创建axios实例
 const instance = axios.create({
     // 基本请求路径的抽取
-    baseURL:"http://tech.wolfcode.cn:23683",
+    baseURL:"/api",
     // 这个时间是你每次请求的过期时间，这次请求认为20秒之后这个请求就是失败的
-    timeout:20000
+    timeout:20000,
 })
 
 // 请求拦截器
 instance.interceptors.request.use(config=>{
-    
     return config
 },err=>{
     return Promise.reject(err)
@@ -18,10 +18,24 @@ instance.interceptors.request.use(config=>{
 
 // 响应拦截器
 instance.interceptors.response.use(res=>{
-
     return res.data
 },err=>{
     return Promise.reject(err)
 })
 
 export default instance
+
+// export function apiGet(url: string, data: any, a: any, b: any){
+//     return new Promise((resolve, reject) =>{
+//         return createAxiosFn("", a, b)
+//             .get(url, data)
+//     })
+// }
+//
+// export function apiPost(url: string, data: any, a: any, b: any){
+//     return new Promise((resolve, reject) =>{
+//         return createAxiosFn("", a, b)
+//             .post(url, data)
+//     })
+// }
+

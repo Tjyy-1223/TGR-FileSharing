@@ -31,4 +31,11 @@ TGR - 基于 REACT + SPRINGBOOT 的文件共享平台
 
 + 使用 REACT + TS 搭建前端界面，并使用 axios 与后端进行数据上的异步交互
 + 对登陆成功后获取的  JWT 进行处理
+  + react 利用 react-cookie 工具将 token 在本地 localStorage 存储一份，用于路由守卫
++ 解决前后端交互导致的跨域问题：
+  + 跨域问题：https://blog.csdn.net/qq_37896194/article/details/102834574
+  + 详解：https://blog.csdn.net/Mxq853126/article/details/137441237
++ 构建 SpringUtil 工具类方便获取 Bean 信息以及 Config 配置信息，通过继承 ApplicationContextAware, EnvironmentAware 方式实现
+
+
 
